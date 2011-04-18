@@ -1,7 +1,7 @@
 
 %define realname   Math-Matrix
 %define version    0.5
-%define release    %mkrel 2
+%define release    %mkrel 3
 
 Name:       perl-%{realname}
 Version:    %{version}
