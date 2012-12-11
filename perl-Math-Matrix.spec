@@ -53,3 +53,22 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 0.5-3mdv2011.0
++ Revision: 655044
+- rebuild for updated spec-helper
+
+* Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.5-2mdv2011.0
++ Revision: 375942
+- rebuild
+
+* Sun Mar 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.5-1mdv2009.1
++ Revision: 355187
+- import perl-Math-Matrix
+
+
+* Sun Mar 15 2009 cpan2dist 0.5-1mdv
+- initial mdv release, generated with cpan2dist
+
