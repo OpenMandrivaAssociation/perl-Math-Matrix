@@ -1,20 +1,15 @@
-
 %define realname   Math-Matrix
-%define version    0.5
-%define release    %mkrel 3
+%define upstream_version    0.7
 
 Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
+Version:    %perl_convert_version %{upstream_version}
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Matrix data type (transpose, multiply etc)
-Source:     http://www.cpan.org/modules/by-module/Math/%{realname}-%{version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Math/Math-Matrix-%{upstream_version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
-
-
 BuildArch: noarch
 
 %description
@@ -30,7 +25,7 @@ new
                                    [rand,rand,rand]);
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{realname}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -40,14 +35,9 @@ new
 make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc README
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -71,4 +61,5 @@ rm -rf %buildroot
 
 * Sun Mar 15 2009 cpan2dist 0.5-1mdv
 - initial mdv release, generated with cpan2dist
+
 
