@@ -1,5 +1,5 @@
 %define realname   Math-Matrix
-%define upstream_version    0.7
+%define upstream_version 0.8
 
 Name:       perl-%{realname}
 Version:    %perl_convert_version %{upstream_version}
@@ -61,5 +61,6 @@ make test
 
 * Sun Mar 15 2009 cpan2dist 0.5-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
