@@ -9,6 +9,7 @@ Group:      Development/Perl
 Summary:    Matrix data type (transpose, multiply etc)
 Source:     http://www.cpan.org/modules/by-module/Math/Math-Matrix-%{upstream_version}.tar.gz
 Url:        https://search.cpan.org/dist/%{realname}
+BuildRequires:	make
 BuildRequires: perl-devel
 BuildArch: noarch
 
