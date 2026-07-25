@@ -1,14 +1,14 @@
 %define realname   Math-Matrix
-%define upstream_version 0.8
+%define upstream_version 0.94
 
 Name:       perl-%{realname}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Matrix data type (transpose, multiply etc)
-Source:     http://www.cpan.org/modules/by-module/Math/Math-Matrix-%{upstream_version}.tar.gz
-Url:        https://search.cpan.org/dist/%{realname}
+Source:     https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-Matrix-%{upstream_version}.tar.gz
+Url:        https://github.com/pjacklam/p5-Math-Matrix
 BuildRequires:	make
 BuildRequires: perl-devel
 BuildArch: noarch
